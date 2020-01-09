@@ -23,5 +23,3 @@ for (var i = 1; i <= 100; i++){
    document.getElementById('lista_for').innerHTML += '<li>' + i + '</li>'
 
   }
-
-}
