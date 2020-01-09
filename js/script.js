@@ -9,17 +9,19 @@
 // Stampiamo come sempre prima in console e poi su html
 
 for (var i = 1; i <= 100; i++){
-  console.log(i);
-  var number = i;
-
-  if(number % 3 == 0 && number % 5 == 0) {
+  if(i % 3 == 0 && i % 5 == 0) {
     console.log('FizzBuzz');
-  }else if(number % 3 == 0 ){
+    document.getElementById('lista_for').innerHTML += '<li>' + 'FizzBuzz' + '</li>';
+  }else if(i % 3 == 0 ){
     console.log('Fizz');
-  }else if (number % 5 == 0 ){
+    document.getElementById('lista_for').innerHTML += '<li>' + 'Fizz' + '</li>';
+  }else if (i % 5 == 0 ){
     console.log('Buzz');
+    document.getElementById('lista_for').innerHTML += '<li>'  + 'Buzz' + '</li>';
   }else{
-    number = i;
+    console.log(i);
+   document.getElementById('lista_for').innerHTML += '<li>' + i + '</li>'
+
   }
 
 }
