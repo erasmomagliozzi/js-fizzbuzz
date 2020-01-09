@@ -10,10 +10,11 @@
 
 for (var i = 1; i <= 100; i++){
   console.log(i);
-  var number = i;
 
-  if((number % 3) == 0 ){
+  var number = i;
+  if(number % 3 == 0 ){
     number = 'Fizz';
+    console.log(number);
 
   }
 
