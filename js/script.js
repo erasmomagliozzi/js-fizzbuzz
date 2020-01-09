@@ -10,7 +10,7 @@
 
 for (var i = 1; i <= 100; i++){
   console.log(i);
-  var number = 1;
+  var number = i;
 
   if((number % 3) == 0 ){
     number = 'Fizz';
